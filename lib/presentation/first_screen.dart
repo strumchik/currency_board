@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultText(text: 'Welcome to the\ncurrency application!');
+    return const DefaultText(text: 'Welcome to the\ncurrency application!');
   }
 }
 

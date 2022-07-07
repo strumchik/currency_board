@@ -6,7 +6,9 @@ import 'package:currency_board/domain/model/currency.dart';
 class ApiUtil {
   final CurrencyService _currencyService;
 
-  ApiUtil(this._currencyService);
+  ApiUtil(this._currencyService) {
+    _currencyService.getApiKey();
+  }
 
   Future<Currency> getCurrency({
     required String fromCurrency,
